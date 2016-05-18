@@ -6,8 +6,6 @@
 //
 //
 
-#import <AVFoundation/AVFoundation.h>
-
 #import "FastttCamera.h"
 #import "IFTTTDeviceOrientation.h"
 #import "UIImage+FastttCamera.h"

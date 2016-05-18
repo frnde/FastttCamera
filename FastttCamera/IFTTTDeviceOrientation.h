@@ -6,7 +6,8 @@
 //  Copyright (c) 2015 IFTTT. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
+@import CoreMotion;
 
 /**
  *  Private category used by FastttCamera for managing the device's actual orientation.

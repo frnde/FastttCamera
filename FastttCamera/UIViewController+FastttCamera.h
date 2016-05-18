@@ -6,7 +6,7 @@
 //
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 
 /**
  *  Public category you can use for adding and removing the FastttCamera instance

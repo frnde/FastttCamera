@@ -6,7 +6,8 @@
 //
 //
 
-#import <AVFoundation/AVFoundation.h>
+@import AVFoundation;
+
 #import "FastttCameraTypes.h"
 
 /**

@@ -6,8 +6,8 @@
 //
 //
 
-#import <UIKit/UIKit.h>
-#import <AVFoundation/AVFoundation.h>
+@import UIKit;
+@import AVFoundation;
 
 /**
  *  Private category used by FastttCamera for processing UIImages.

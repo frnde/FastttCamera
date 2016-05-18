@@ -6,7 +6,9 @@
 //
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
+@import AVFoundation;
+
 #import "FastttCameraInterface.h"
 
 /**

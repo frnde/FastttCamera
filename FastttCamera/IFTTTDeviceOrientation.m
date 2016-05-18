@@ -6,7 +6,6 @@
 //  Copyright (c) 2015 IFTTT. All rights reserved.
 //
 
-#import <CoreMotion/CoreMotion.h>
 #import "IFTTTDeviceOrientation.h"
 
 @interface IFTTTDeviceOrientation ()

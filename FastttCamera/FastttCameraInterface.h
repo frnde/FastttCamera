@@ -6,7 +6,8 @@
 //
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
+
 #import "FastttCameraTypes.h"
 #import "FastttCapturedImage.h"
 #import "UIViewController+FastttCamera.h"
