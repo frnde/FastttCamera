@@ -198,7 +198,6 @@
 				708E36671CECB45F002BBDF9 /* Frameworks */,
 				708E36681CECB45F002BBDF9 /* Headers */,
 				708E36691CECB45F002BBDF9 /* Resources */,
-				708E369D1CECBAC2002BBDF9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -249,23 +248,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		708E369D1CECBAC2002BBDF9 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/GPUImage.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		708E36661CECB45F002BBDF9 /* Sources */ = {
