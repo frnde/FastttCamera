@@ -65,7 +65,8 @@
     if ((self = [super init])) {
         _bgTaskId = UIBackgroundTaskInvalid;
         _running = NO;
-        
+        _startCameraAutomatically = YES;
+
         [self _setupCaptureSession];
         
         _handlesTapFocus = YES;
@@ -83,8 +84,7 @@
         _cameraDevice = FastttCameraDeviceRear;
         _cameraFlashMode = FastttCameraFlashModeOff;
         _cameraTorchMode = FastttCameraTorchModeOff;
-        _startCameraAutomatically = YES;
-        
+
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(applicationWillEnterForeground:)
                                                      name:UIApplicationWillEnterForegroundNotification
@@ -876,7 +876,9 @@
         _deviceOrientation = [IFTTTDeviceOrientation new];
         
         if (self.isViewLoaded && self.view.window) {
-            [self startRunning];
+            if (_startCameraAutomatically) {
+                [self startRunning];
+            }
             [self toMainThread:^{
                 [weakSelf _insertPreviewLayer];
                 [weakSelf _setPreviewVideoOrientation];
