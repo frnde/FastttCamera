@@ -57,7 +57,8 @@
             scalesImage = _scalesImage,
             cameraDevice = _cameraDevice,
             cameraFlashMode = _cameraFlashMode,
-            cameraTorchMode = _cameraTorchMode;
+            cameraTorchMode = _cameraTorchMode,
+            startCameraAutomatically = _startCameraAutomatically;
 
 - (instancetype)init
 {
@@ -82,6 +83,7 @@
         _cameraDevice = FastttCameraDeviceRear;
         _cameraFlashMode = FastttCameraFlashModeOff;
         _cameraTorchMode = FastttCameraTorchModeOff;
+        _startCameraAutomatically = YES;
         
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(applicationWillEnterForeground:)
@@ -193,8 +195,10 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
-    [self startRunning];
+
+    if (_startCameraAutomatically) {
+        [self startRunning];
+    }
     
     [self _insertPreviewLayer];
     

@@ -121,6 +121,11 @@
  */
 @property (nonatomic, assign) UIDeviceOrientation fixedInterfaceOrientation;
 
+/**
+ *  Defaults to YES. Set this to NO if you want to start the camera manually.
+ */
+@property (nonatomic, assign) BOOL startCameraAutomatically;
+
 #pragma mark - Camera State
 
 /**
